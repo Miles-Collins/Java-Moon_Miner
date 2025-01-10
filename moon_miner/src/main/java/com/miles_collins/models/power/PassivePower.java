@@ -10,4 +10,8 @@ public class PassivePower extends Power {
     public void performAction() {
         System.out.println("Passive power activated! Current power: " + power);
     }
+
+    public int generatePassivePower() {
+        return power;
+    }
 }
