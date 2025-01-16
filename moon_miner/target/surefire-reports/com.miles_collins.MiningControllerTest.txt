@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: com.miles_collins.MiningControllerTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.031 s <<< FAILURE! - in com.miles_collins.MiningControllerTest
+com.miles_collins.MiningControllerTest.testBuyRoverAfterUpgrades  Time elapsed: 0.007 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <400> but was: <550>
+	at com.miles_collins.MiningControllerTest.testBuyRoverAfterUpgrades(MiningControllerTest.java:103)
+
+com.miles_collins.MiningControllerTest.testBuyRoverWithoutEnoughCash  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <null> but was: <com.miles_collins.models.items.click.Rover@7722c3c3>
+	at com.miles_collins.MiningControllerTest.testBuyRoverWithoutEnoughCash(MiningControllerTest.java:81)
+
+com.miles_collins.MiningControllerTest.testUpgradeRover  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <750> but was: <800>
+	at com.miles_collins.MiningControllerTest.testUpgradeRover(MiningControllerTest.java:43)
+
+com.miles_collins.MiningControllerTest.testUpgradeRoverTwice  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <525> but was: <650>
+	at com.miles_collins.MiningControllerTest.testUpgradeRoverTwice(MiningControllerTest.java:55)
+
+com.miles_collins.MiningControllerTest.testUpgradeRoverThrice  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <338> but was: <337>
+	at com.miles_collins.MiningControllerTest.testUpgradeRoverThrice(MiningControllerTest.java:67)
+
