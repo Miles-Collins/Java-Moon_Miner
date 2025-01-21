@@ -1,14 +1,14 @@
 package com.miles_collins.models.resources;
 
-public class Cash extends Resource {
+public class Gold extends Resource {
 
-    public Cash(int initialAmount) {
+    public Gold(int initialAmount) {
         super(initialAmount);
     }
 
     @Override
     public String getResourceType() {
-        return "Cash";
+        return "Gold";
     }
 
 }

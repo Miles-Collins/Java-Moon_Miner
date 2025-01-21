@@ -1,10 +1,10 @@
 package com.miles_collins;
 
-import com.miles_collins.controllers.MiningController;
+import com.miles_collins.controllers.GameController;
 
 public final class App {
 
     public static void main(String[] args) {
-        MiningController.main(args);
+        GameController.main(args);
     }
 }

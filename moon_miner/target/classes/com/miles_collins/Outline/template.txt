@@ -1,0 +1,45 @@
+Title: Epic Clicker: Heroes of Azerios
+(A clicker game inspired by RPG mechanics, legendary battles, and loot-driven progression.)
+
+Core Gameplay:
+Players click to attack enemies, earning gold, XP, and loot.
+Use gold to hire mercenaries, upgrade gear, and unlock skills.
+Each boss level requires strategic upgrades and abilities to defeat.
+Game Elements:
+1. Click-Based Combat
+Click on the enemy to deal damage.
+Critical hits for bonus damage.
+Combo meter: Clicking fast increases attack speed.
+2. Classes & Heroes
+Choose a starting class:
+
+Warrior: High damage and defense.
+Mage: Powerful spells and elemental attacks.
+Rogue: Fast attacks and poison damage.
+Necromancer: Summons minions to auto-attack.
+Unlock new heroes as you progress.
+
+3. Loot & Equipment
+Drops: Defeated enemies drop weapons, armor, and trinkets.
+Enchanting: Improve gear using rare materials.
+Set Bonuses: Equipping a full set grants special abilities.
+4. Boss Fights & Raids
+Every 10th level is a boss battle.
+Timed fights: Defeat them within the limit to proceed.
+Special mechanics like shield phases, counterattacks, or minion summons.
+5. Passive & Active Skills
+Auto-attack minions (like WoW pets).
+Ultimates: Charge up a powerful attack for massive damage.
+Spells: Cast fireballs, heal, or summon meteors.
+Buffs: Temporary boosts to gold gain, damage, or XP.
+6. World Map & Adventure Zones
+Progress through fantasy locations like:
+Stormhold Keep – A ruined castle filled with undead.
+Frostfang Mountains – Ice trolls and ancient dragons.
+Abyssal Wastes – Demonic invaders from another realm.
+7. Prestige System (Rebirth)
+Reset at certain milestones to gain legendary relics.
+Each relic boosts future runs with stronger abilities.
+8. Guilds & Multiplayer (Future Expansion)
+Join a guild to get passive bonuses.
+Compete in leaderboards or co-op boss fights.

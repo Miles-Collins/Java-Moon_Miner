@@ -4,15 +4,15 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-import com.miles_collins.models.items.passive.Rover;
+import com.miles_collins.models.items.passive.GoblinSquire;
 import com.miles_collins.models.power.ClickPower;
 import com.miles_collins.models.power.PassivePower;
-import com.miles_collins.models.resources.Cash;
 import com.miles_collins.models.resources.Gem;
+import com.miles_collins.models.resources.Gold;
 import com.miles_collins.models.resources.ResourceManager;
 import com.miles_collins.services.RoverService;
 
-public class MiningController {
+public class GameController {
 
     private static final RoverService roverService;
     private static ResourceManager resourceManager;
@@ -26,7 +26,7 @@ public class MiningController {
 
     private static void initializeResourceManager() {
         resourceManager = new ResourceManager();
-        resourceManager.addResource(new Cash(1000)); // Initial cash
+        resourceManager.addResource(new Gold(1000)); // Initial cash
         resourceManager.addResource(new Gem(0)); // Initial gems
     }
 
@@ -52,7 +52,7 @@ public class MiningController {
         MiningController.resourceManager = resourceManager;
     }
 
-    public static Rover getRover() {
+    public static GoblinSquire getRover() {
         return roverService.getRover();
     }
 }
