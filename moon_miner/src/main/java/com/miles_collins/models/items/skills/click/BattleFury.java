@@ -1,5 +1,9 @@
 package com.miles_collins.models.items.skills.click;
 
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.ScheduledExecutorService;
+
 import com.miles_collins.models.items.Item;
 
 public class BattleFury extends Item {
@@ -10,8 +14,10 @@ public class BattleFury extends Item {
 
     private static final int BASE_COST = 100;
     private static final String BASE_NAME_STRING = "Battle Fury";
-    private static final int DURATION = 30000
+    private static final int DURATION = 30000;
     private static final int COOLDOWN = 120000;
+
+    private final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
 
     public BattleFury() {
         super(BASE_NAME_STRING, BASE_COST);
@@ -47,10 +53,34 @@ public class BattleFury extends Item {
     private void activateSkill() {
         isActive = true;
         isOnCooldown = true;
+        System.out.println(name + " activated. Damage multiplier: " + getDamageMultiplier());
+
+        // Schedule deactivation after DURATION
+        scheduler.schedule(this::deactivateSkill, DURATION, TimeUnit.MILLISECONDS);
+    }
+
+    private void deactivateSkill() {
+        isActive = false;
+        System.out.println(name + " deactivated.");
+
+        // Schedule cooldown end after COOLDOWN
+        scheduler.schedule(this::endCooldown, COOLDOWN, TimeUnit.MILLISECONDS);
     }
 
     public double getDamageMultiplier() {
         return damageMultiplier;
     }
 
+    private void endCooldown() {
+        isOnCooldown = false;
+        System.out.println(name + " cooldown ended.");
+    }
+
+    public boolean isActive() {
+        return isActive;
+    }
+
+    public boolean isOnCooldown() {
+        return isOnCooldown;
+    }
 }
